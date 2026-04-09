@@ -1,0 +1,129 @@
+/* ===== works detail ===== */
+.works-detail {
+  padding: 120px 20px;
+  text-align: center;
+
+  &-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* タイトル */
+  .works-heading {
+    h2 {
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+
+    p {
+      font-size: 12px;
+      color: #777;
+      margin-top: 5px;
+    }
+  }
+
+  /* メイン画像 */
+  .works-visual {
+    position: relative;
+    margin-top: 60px;
+    text-align: center;
+
+    .device {
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    /* PC（ベース） */
+    .pc {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* スマホ（重ねる） */
+    .sp {
+      position: absolute;
+      right: 10%;
+      bottom: -20px;
+      width: 120px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  /* タグ */
+  .works-tags {
+    margin-top: 30px;
+
+    span {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 5px 15px;
+      font-size: 12px;
+      margin: 0 5px;
+      border-radius: 20px;
+    }
+  }
+
+  /* タイトル */
+  .works-title {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .works-meta {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+  }
+
+  /* URL */
+  .works-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #3b82f6;
+  }
+
+  /* ===== 詳細情報 ===== */
+  .works-info {
+    margin-top: 60px;
+    text-align: left;
+
+    .info-block {
+      border-top: 1px solid #ccc;
+      padding: 20px 0;
+
+      h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 1.8;
+        color: #555;
+      }
+    }
+  }
+
+  .works-page {
+    display: flex;
+    gap: 80px;
+    margin-top: 200px;
+
+    .pc-page {
+      width: 82%;
+      object-fit: cover;
+    }
+
+    .sp-page {
+      margin-top: 60px;
+      width: 18%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@use "mixin" as m;
+
+/* ================= header ================= */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 20px 40px;
+  background-color: #f5f5f5;
+  z-index: 1000;
+
+  @include m.sp {
+    height: 70px;
+    padding: 15px 20px;
+  }
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* ロゴ */
+.logo {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+/* ================= ハンバーガー ================= */
+.hamburger {
+  display: none;
+  width: 25px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1100;
+
+  span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  span:nth-child(1) {
+    top: 0;
+  }
+  span:nth-child(2) {
+    top: 9px;
+  }
+  span:nth-child(3) {
+    bottom: 0;
+  }
+
+  @include m.sp {
+    display: block;
+  }
+}
+
+/* ================= ナビ ================= */
+.nav {
+  ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    &:hover {
+      opacity: 0.6;
+      color: #e1306c;
+    }
+  }
+
+  /* スマホ */
+  @include m.sp {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    padding-top: 100px;
+    transition: 0.3s;
+
+    ul {
+      flex-direction: column;
+      gap: 25px;
+      text-align: center;
+    }
+  }
+}
+
+/* ================= 開いた状態 ================= */
+.header.open {
+  .nav {
+    right: 0;
+  }
+
+  .hamburger span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}

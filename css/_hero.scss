@@ -1,0 +1,87 @@
+@use "mixin" as m;
+
+.hero {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* ===== タブレット ===== */
+  @include m.tab {
+    margin-top: 70px;
+  }
+
+  /* ===== スマホ ===== */
+  @include m.sp {
+    margin-top: 60px;
+  }
+}
+
+/* ===== テキスト ===== */
+.hero-text {
+  margin-block: 100px 120px;
+
+  h2 {
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-align: center;
+
+    @include m.sp {
+      font-size: 22px;
+      letter-spacing: 3px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    text-align: center;
+    color: #777;
+
+    @include m.sp {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+  }
+
+  @include m.tab {
+    margin-block: 80px 100px;
+  }
+
+  @include m.sp {
+    margin-block: 60px 80px;
+  }
+}
+
+/* ===== 画像 ===== */
+.hero-img {
+  width: 100%;
+  height: 420px;
+  text-align: center;
+
+  img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ===== タブレット ===== */
+  @include m.tab {
+    height: 360px;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  /* ===== スマホ ===== */
+  @include m.sp {
+    height: 260px;
+
+    img {
+      width: 92%;
+    }
+  }
+}

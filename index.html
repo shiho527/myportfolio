@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>portfolio</title>
+    <meta
+      name="description"
+      content="テキストテキストテキストテキストテキストテキストテキストテキスト"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <!-- フォント先 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- アイコン -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="index.html">
+          <h1 class="logo">mame</h1>
+        </a>
+
+        <!-- ハンバーガー -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="#">TOP</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>PORTFOLIO</h2>
+        <p>webdesign & programer</p>
+      </div>
+
+      <div class="hero-img">
+        <img src="img/hero.jpg" alt="ピンクの壁紙" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-heading">
+          <h2>ABOUT</h2>
+          <p>わたしについて</p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-images">
+            <div class="img-large">
+              <img src="img/about1.png" alt="プロフィール画像" />
+            </div>
+
+            <div class="img-small">
+              <img src="img/about2.jpg" alt="作業風景" />
+            </div>
+          </div>
+
+          <div class="about-text">
+            <h3>mame <span class="name-jp">まめ</span></h3>
+            <p>
+              兵庫県出身、愛知県在住。<br />
+              新卒から10年以上、金融機関にて窓口接客や役員秘書としてキャリアを積んできました。
+              そこで培った 「相手のニーズを深く汲み取る力」 と 「正確さ」
+              が、私の制作の原点です。<br /><br />
+
+              出産を機に働き方を見つめ直し、現在は育児をしながらWeb制作に励んでいます。
+              デザインを形にする 「構築（コーディング）」 の工程が大好きで、
+              見た目の美しさはもちろん、中身まで誠実で丁寧なサイト制作を追求しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="works" id="works">
+      <div class="works-inner">
+        <div class="works-heading">
+          <h2>WORKS</h2>
+          <p>制作物</p>
+
+          <ul class="works-nav">
+            <li><a href="#website">website</a></li>
+            <li><a href="#">banner</a></li>
+            <li><a href="#">graphic</a></li>
+          </ul>
+        </div>
+
+        <!-- ===== website ===== -->
+        <div class="works-group" id="website">
+          <p class="works-category">website</p>
+
+          <div class="works-list">
+            <div class="works-card">
+              <a href="works-detail.html">
+                <div class="thumb">
+                  <img src="img/works1.png" alt="Think Kids Lab" />
+                </div>
+              </a>
+              <h3>キッズプログラミングスクール　website</h3>
+              <p>デザインからコーディングまで全て行いました。</p>
+              <div class="tags">
+                <span>Web design</span>
+                <span>Branding</span>
+                <span>coding</span>
+                <span>UI/UX</span>
+                <span>Responsive</span>
+                <span>WordPress</span>
+              </div>
+            </div>
+
+            <div class="works-card">
+              <div class="thumb">
+                <img src="img/works2.png" alt="ECサイト構築" />
+              </div>
+              <h3>ポートフォリオサイト（当サイト）</h3>
+              <p>自身のポートフォリオサイトを作成しました。</p>
+              <div class="tags">
+                <span>Web design</span>
+                <span>coding</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+
+            <div class="works-card">
+              <div class="thumb">
+                <img src="img/works3.png" alt="ブランディングデザイン" />
+              </div>
+              <h3>ピラティススタジオ　website</h3>
+              <p>ノーコードツール　studioでWEBページを作成しました。</p>
+              <div class="tags">
+                <span>Branding</span>
+                <span>studio</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-more">
+            <a href="#">+ more</a>
+          </div>
+        </div>
+
+        <!-- ===== banner ===== -->
+        <!-- <div class="works-group">
+          <p class="works-category">banner</p>
+
+          <div class="works-list">
+            <div class="works-card">
+              <div class="thumb">
+                <img src="img/banner1.jpg" alt="バナーデザイン1" />
+              </div>
+              <h3>Corporate banner</h3>
+              <p>訴求力の高いバナーを制作しました。</p>
+              <div class="tags">
+                <span>Banner</span>
+                <span>Design</span>
+              </div>
+            </div>
+
+            <div class="works-card">
+              <div class="thumb">
+                <img src="img/banner2.jpg" alt="バナーデザイン2" />
+              </div>
+              <h3>Campaign banner</h3>
+              <p>キャンペーン用バナーのデザインを担当しました。</p>
+              <div class="tags">
+                <span>Banner</span>
+                <span>Creative</span>
+              </div>
+            </div>
+
+            <div class="works-card">
+              <div class="thumb">
+                <img src="img/banner3.jpg" alt="バナーデザイン3" />
+              </div>
+              <h3>Ad banner</h3>
+              <p>広告用バナーを制作しました。</p>
+              <div class="tags">
+                <span>Ads</span>
+                <span>Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-more">
+            <a href="#">+ more</a>
+          </div>
+        </div> -->
+
+        <!-- ===== graphic ===== -->
+        <!-- <div class="works-group">
+          <p class="works-category">graphic</p>
+
+          <div class="works-list">
+            <div class="works-card">
+              <div class="thumb">
+                <img src="img/graphic1.jpg" alt="グラフィックデザイン1" />
+              </div>
+              <h3>Poster design</h3>
+              <p>ポスターのビジュアルデザインを制作しました。</p>
+              <div class="tags">
+                <span>Graphic</span>
+                <span>Design</span>
+              </div>
+            </div>
+
+            <div class="works-card">
+              <div class="thumb">
+                <img src="img/graphic2.jpg" alt="グラフィックデザイン2" />
+              </div>
+              <h3>Flyer design</h3>
+              <p>フライヤーのデザインを担当しました。</p>
+              <div class="tags">
+                <span>Graphic</span>
+                <span>Creative</span>
+              </div>
+            </div>
+
+            <div class="works-card">
+              <div class="thumb">
+                <img src="img/graphic3.jpg" alt="グラフィックデザイン3" />
+              </div>
+              <h3>Brochure design</h3>
+              <p>パンフレットのデザインを制作しました。</p>
+              <div class="tags">
+                <span>Graphic</span>
+                <span>Branding</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-more">
+            <a href="#">+ more</a>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- skill -->
+    <section class="skill" id="skill">
+      <div class="skill-inner">
+        <!-- タイトル -->
+        <div class="skill-heading">
+          <h2>SKILL</h2>
+          <p>できること</p>
+        </div>
+
+        <!-- スキル一覧 -->
+        <ul class="skill-list">
+          <li class="skill-item">
+            <img src="img/html.png" alt="HTML" />
+            <div class="skill-text">
+              <p class="skill-name">HTML5</p>
+              <p class="skill-desc">
+                構造を意識したマークアップで、SEOや可読性を意識したコーディングを行います。
+              </p>
+            </div>
+          </li>
+
+          <li class="skill-item">
+            <img src="img/css.png" alt="CSS" />
+            <div class="skill-text">
+              <p class="skill-name">CSS3</p>
+              <p class="skill-desc">
+                デザインの意図を汲み取り、細部まで再現したスタイリングを心がけています
+              </p>
+            </div>
+          </li>
+
+          <li class="skill-item">
+            <img src="img/js.png" alt="JavaScript" />
+            <div class="skill-text">
+              <p class="skill-name">JavaScript / jQuery</p>
+              <p class="skill-desc">
+                UIの動きやインタラクションを実装し、使いやすさを高めます。
+              </p>
+            </div>
+          </li>
+
+          <li class="skill-item">
+            <img src="img/wordpress.png" alt="WordPress" />
+            <div class="skill-text">
+              <p class="skill-name">WordPress</p>
+              <p class="skill-desc">
+                オリジナルテーマの構築や既存サイトのカスタマイズに対応可能です。
+              </p>
+            </div>
+          </li>
+
+          <li class="skill-item">
+            <img src="img/figma.png" alt="Figma" />
+            <div class="skill-text">
+              <p class="skill-name">Figma</p>
+              <p class="skill-desc">
+                レイアウト設計からUIデザインまで一貫して対応できます。
+              </p>
+            </div>
+          </li>
+
+          <li class="skill-item">
+            <img src="img/studio.png" alt="Studio" />
+            <div class="skill-text">
+              <p class="skill-name">Studio</p>
+              <p class="skill-desc">
+                ノーコードで更新しやすいWebサイト制作が可能です。
+              </p>
+            </div>
+          </li>
+
+          <li class="skill-item">
+            <img src="img/qualification.png" alt="資格" />
+            <div class="skill-text">
+              <p class="skill-name">資格</p>
+              <p class="skill-desc">
+                ・ITパスポート ・FP2級 ・証券外務員1種 ・秘書検定2級 他…
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <!-- 上段 -->
+        <div class="footer-top">
+          <div class="footer-logo">
+            <a href="index.html">
+              <p>mame</p>
+            </a>
+          </div>
+
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">TOP</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#works">WORKS</a></li>
+              <li><a href="#skill">SKILL</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-sns">
+            <a
+              href="https://www.instagram.com/_mame5555?igsh=YThjaHd5Mjh5M2Q2&utm_source=qr"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.threads.com/@_mame5555?igshid=NTc4MTIwNjQ2YQ=="
+              ><i class="fa-brands fa-threads"></i
+            ></a>
+            <a href="https://x.com/__mame5555?s=21&t=Xrj8gj-cx_z5ETrhMC7AMg"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="footer-copy">
+          <p>© 2026 mame portfolio. All rights reserved.</p>
+        </div>
+      </div>
+
+      <a class="to-top" href="#"></a>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+@use "mixin" as m;
+
+.footer {
+  background: #f3f3f3;
+  padding: 80px 0 40px;
+
+  @include m.sp {
+    padding: 60px 0 30px;
+  }
+
+  &-inner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* 上段 */
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @include m.sp {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  /* ロゴ */
+  &-logo {
+    p {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+  }
+
+  /* ナビ */
+  &-nav {
+    ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+
+      @include m.sp {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #333;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.6;
+        color: #e1306c;
+      }
+    }
+  }
+
+  /* SNS */
+  &-sns {
+    display: flex;
+    gap: 20px;
+
+    a {
+      width: 36px;
+      height: 36px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      transition: 0.3s;
+
+      &:visited {
+        color: #333;
+      }
+
+      &:hover {
+        background: #e1306c;
+        color: #fff;
+        border-color: #e1306c;
+      }
+    }
+  }
+
+  /* 線 */
+  &-line {
+    height: 1px;
+    background: #999;
+    margin-bottom: 20px;
+  }
+
+  /* コピー */
+  &-copy {
+    text-align: center;
+
+    p {
+      font-size: 12px;
+      color: #333;
+    }
+  }
+
+  /* to-top */
+  .to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: #3f3f3f;
+    border: 1px solid #3f3f3f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 30;
+    transition: 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 9px;
+      bottom: 11px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0px 4px 6px 4px;
+      border-color: transparent transparent #fff transparent;
+    }
+  }
+}
